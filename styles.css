@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#333333;
+}
+h2{
+    color: #2E4053;
+}
+
+
+header {
+    background-color: #ffc67d;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.resource-item {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resource-item button {
+    background-color: #0f9b5c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+#contactForm label {
+    margin: 10px 0 5px 0;
+}
+
+#contactForm input, #contactForm textarea {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+#contactForm button {
+    margin-top: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+p{
+    color: rgb(196, 139, 34);
+}
+#communication{
+    color: orangered;
+}
+
+footer {
+    background-color: #bb1010;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+   
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Preparedness & Response</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Disaster Preparedness & Response</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#communication">Communication</a></li>
+            </ul>
+        </nav>
+    </header>>
+    <style>
+  
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f7dc6f;
+            color: #fff;
+            padding: 1em;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            color: #2196f3;
+            text-decoration: none;
+        }
+
+        .burger {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .burger {
+                display: block;
+                cursor: pointer;
+            }
+            .burger div {
+                width: 25px;
+                height: 3px;
+                background-color: #fff;
+                margin-bottom: 5px;
+            }
+        }
+
+      
+        .disaster-readiness {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+
+        .disaster-readiness h2 {
+            color: #8bc34a;
+        }
+
+        .disaster-readiness h3 {
+            color: #0097a7;
+        }
+
+        .disaster-readiness img {
+            width: 50%;
+            height: auto;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Disaster Readiness</div>
+        <ul class="nav-links">
+            <li><a href="#hurricanes">Hurricanes</a></li>
+            <li><a href="#earthquakes">Earthquakes</a></li>
+            <li><a href="#floods">Floods</a></li>
+            <li><a href="#wildfires">Wildfires</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="disaster-readiness">
+        <h2>Disaster Readiness</h2>
+        <h3 id="hurricanes">Hurricanes</h3>
+        <img src="hurricanes.jpg" alt="Hurricane Image">
+        <p>1.Create a hurricane evacuation plan with your family.</p>
+        <p>2. Stock up on non-perishable food, water, and medications.</p>
+        <p>3.Board up windows and secure outdoor furniture.</p>
+        <p>4. Stay informed about weather conditions through reliable news sources.</p>
+        <p>5. Consider installing storm shutters or impact-resistant windows.</p>
+            
+        
+        
+        <h3 id="earthquakes">Earthquakes</h3>
+        <img src="earthquack.jpg" alt="Earthquake Image">
+       
+
+            <p>1. Secure heavy furniture and objects to walls to prevent them from falling.</p>
+            <p>2. Store emergency supplies, such as food, water, and first aid kits.</p>
+            <p>3. Practice earthquake drills with your family.</p>
+            <p>4. Know evacuation routes and emergency shelters.</p>
+            <p>5. Consider installing earthquake-resistant fasteners on heavy objects.</p></li>
+        
+        
+        <h3 id="floods">Floods</h3>
+        <img src="flood.jpg" alt="Flood Image">
+        <p>1. Know your flood risk and evacuation routes.</p>
+        <P>2. Store valuable items and important documents in a safe place.</P>
+        <p>3. Keep emergency supplies, such as food, water, and first aid kits.</P>
+        <p>4. Consider installing flood-proof barriers or sandbags.</P>
+        <p>5. Stay informed about weather conditions through reliable news sources.</P>
+       
+        
+       <h3 id="wildfires">Wildfires</h3>
+        <img src="wildfires.jpg" alt="Wildfire Image">
+            <p>1. Create a wildfire evacuation plan with your family.</P>
+            <p>2. Keep emergency supplies, such as food, water, and first aid kits.</P>
+            <p>3. Clear flammable vegetation and debris from around your home.</P>
+            <p>4. Stay informed about fire conditions through reliable news sources.</P>
+            <p>5. Consider installing fire-resistant roofing and siding.</P>
+        
+    
+    </div>
+    <script>
+       
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+    <section id="home">
+        <h2>Welcome to Disaster Preparedness & Response</h2>
+        <p>Be informed and prepared. Access real-time information and learn how to respond effectively to natural disasters.</p>
+    </section>
+
+    <section id="resources">
+        <h2 style="color: #2196f3;">Educational Resources</h2>
+        <div class="resource-item">
+            <h3>Hurricanes</h3>
+            <p>Learn how to prepare for hurricanes, what to do during a storm, and how to stay safe afterward.</p>
+            <button onclick="showResource('hurricanes')">Learn More</button>
+        </div>
+        <div class="resource-item">
+            <h3>Earthquakes</h3>
+            <p>Understand earthquake preparedness, safe spots during an earthquake, and post-earthquake actions.</p>
+            <button onclick="showResource('earthquakes')">Learn More</button>
+        </div>
+        <div class="resource-item">
+            <h3>Floods</h3>
+            <p>Get tips on flood prevention, evacuation routes, and dealing with floodwaters.</p>
+            <button onclick="showResource('floods')">Learn More</button>
+        </div>
+        <div class="resource-item">
+            <h3>Wildfires</h3>
+            <p>Know the signs of a wildfire, how to prepare your home, and what to do if you're in the path of a fire.</p>
+            <button onclick="showResource('wildfires')">Learn More</button>
+        </div>
+    </section>
+
+    <section id="communication">
+         <h2 style="color: pink;">Stay Connected </h2>
+        <p>Fill out the form below to receive alerts and updates:</p>
+        <form id="contactForm" onsubmit="return handleSubmit(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button style="background-color:orange;" type="submit">Submit</button>
+        </form>
+        <p id="formResponse"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Disaster Preparedness & Response. All rights reserved.</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
